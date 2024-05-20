@@ -1,0 +1,241 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    overflow-y: auto;
+    min-height: 100vh;
+}
+
+/* Estilos para el logo */
+.logo {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0px;
+    box-shadow: 0 0px 0px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+/* Estilos específicos para el logo en login.html */
+.logo-login {
+    width: 75%; /* Ajusta este tamaño según lo necesario */
+}
+
+/* Estilos específicos para el logo en registro.html */
+.logo-registro {
+    width: 45%; /* Ajusta este tamaño según lo necesario */
+}
+
+/* Estilos para el contenedor del formulario */
+.form-container {
+    position: relative;
+    top: auto;
+    background: white;
+    padding: 25px 20px 20px;
+    border-radius: 8px;
+    box-shadow: 10px 4px 8px rgba(0,0,0,0.1);
+    width: 40%; 
+}
+
+/* Estilos para los grupos de formulario */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Estilos para las etiquetas de formulario */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Estilos para el asterisco rojo */
+.required {
+    color: red;
+}
+
+/* Estilos para los campos de formulario */
+input[type="text"],
+input[type="date"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+    width: 96%;
+    padding: 12px; /* Aumenta el padding */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px; /* Aumenta el tamaño de fuente */
+}
+
+/* Estilos para las casillas de selección */
+[type="checkbox"] {
+    transform: scale(2);
+    margin-right: 10px;
+}
+
+/* Estilos para las etiquetas de las casillas */
+[type="checkbox"] + label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Estilos para los botones */
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #4cac4c;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilos para los botones cuando se pasa el mouse sobre ellos */
+button:hover {
+    background-color: #1b7721;
+}
+
+/* Estilos específicos para el botón de Limpiar */
+button[type="reset"] {
+    width: 48%; 
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+button[type="reset"]:hover {
+    background-color: #cccccc;
+}
+
+/* Estilos para el contenedor de botones */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 0; /* Elimina el espacio entre los botones */
+}
+
+button[type="submit"],
+button[type="reset"],
+button.register-button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+button[type="submit"],
+button.register-button {
+    background-color: #4cac4c;
+    color: white;
+}
+
+button[type="submit"]:hover,
+button.register-button:hover {
+    background-color: #1b7721;
+}
+
+button.register-button {
+    background-color: transparent;
+    color: black;
+}
+
+button.register-button:hover {
+    background-color: transparent;
+    color: black;
+    text-decoration: underline;
+}
+
+/* Estilos específicos para el formulario de inicio de sesión */
+.login-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 25%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+/* Estilos para el título del formulario de inicio de sesión */
+.login-container h2 {
+    text-align: center;
+}
+
+.login-container form {
+    margin-top: 20px;
+}
+
+/* Estilos para los grupos de formulario en el formulario de inicio de sesión */
+.login-container .form-group {
+    margin-bottom: 15px;
+}
+
+/* Estilos para las etiquetas de formulario en el formulario de inicio de sesión */
+.login-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Estilos para el campo de número de cédula en el formulario de inicio de sesión */
+.login-container input[type="number"] {
+    width: 94%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilos para los botones en el formulario de inicio de sesión */
+.login-container button[type="submit"],
+.login-container button.register-button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.login-container button[type="submit"] {
+    background-color: #4cac4c;
+    color: white;
+}
+
+.login-container button[type="submit"]:hover {
+    background-color: #1b7721;
+}
+
+.login-container button.register-button {
+    background-color: transparent;
+    color: black;
+    text-align: center;
+}
+
+.login-container button.register-button:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el mensaje de inicio de sesión */
+#mensaje {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Eliminar las flechas de los campos number */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

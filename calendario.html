@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario de Eventos</title>
+    <link rel="stylesheet" href="calendario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css">
+</head>
+<body>
+    <header>
+        <img src="uleam.png" alt="ULEAM" class="logo" onclick="location.href='index.html'">
+        <h1>Calendario de Eventos</h1>
+        <button class="inicio-button" onclick="location.href='index.html'">Inicio</button>
+    </header>
+    <div id="calendar-container">
+        <div id="calendar"></div>
+    </div>
+
+    <div id="event-modal" class="modal">
+        <form id="event-form">
+            <h2>Agregar/Editar Evento</h2>
+            <label for="event-title">Título del Evento:</label>
+            <input type="text" id="event-title" required>
+            <label for="event-start">Fecha y Hora de Inicio:</label>
+            <input type="datetime-local" id="event-start" required>
+            <label for="event-end">Fecha y Hora de Fin:</label>
+            <input type="datetime-local" id="event-end">
+            <button type="submit">Guardar</button>
+            <button type="button" id="delete-event" style="display: none;">Eliminar</button>
+            <button type="button" onclick="$.modal.close();">Cancelar</button>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/locale/es.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="calendario.js"></script>
+</body>
+</html>
