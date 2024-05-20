@@ -1,0 +1,124 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background: #99ac51;
+    box-shadow: 0 0px 8px rgb(0, 0, 0);
+    position: relative;
+}
+
+header .logo {
+    width: 20%;
+    height: auto;
+    cursor: pointer;
+}
+
+header h1 {
+    flex-grow: 1;
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+header .inicio-button {
+    background-color: #4cac4c;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.486);
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+header .inicio-button:hover {
+    background-color: #1b7721;
+}
+
+#calendar-container {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.39);
+    max-width: 80%;
+    margin: 40px auto; /* Añadido margen superior */
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal form h2 {
+    margin-bottom: 10px;
+}
+
+.modal form label {
+    margin-top: 10px;
+}
+
+.modal form input[type="text"],
+.modal form input[type="datetime-local"],
+.modal form button {
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.modal form button {
+    background-color: #4cac4c;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.modal form button:hover {
+    background-color: #1b7721;
+}
+
+.modal form button[type="button"] {
+    background-color: #ccc;
+    color: black;
+}
+
+.modal form button[type="button"]:hover {
+    background-color: #999;
+}
+
+.fc-event, .fc-day-grid-event {
+    cursor: pointer;
+}
+
+.fc-day:hover {
+    cursor: pointer;
+}
