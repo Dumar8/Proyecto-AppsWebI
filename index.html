@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - ULEAM</title>
+    <link rel="stylesheet" href="inicio.css">
+</head>
+<body>
+    <div class="header">
+        <img src="uleam.png" alt="ULEAM" class="logo" onclick="location.href='index.html'">
+        <div class="auth-buttons">
+            <a href="registro.html" class="register-link">Registrarse</a>
+            <button onclick="location.href='login.html'">Iniciar Sesión</button>
+        </div>
+        <div class="notification-container">
+            <div class="notification-icon" onclick="toggleNotifications()">
+                <img src="https://cdn-icons-png.flaticon.com/512/1/1872.png" alt="Notificaciones">
+                <span class="notification-count">3</span>
+            </div>
+            <div class="notifications" id="notifications">
+                <ul>
+                    <li>Notificación 1</li>
+                    <li>Notificación 2</li>
+                    <li>Notificación 3</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu">
+        <button onclick="location.href='perfil.html'">PERFIL DE USUARIO</button>
+        <button onclick="location.href='calendario.html'">CALENDARIO DE EVENTOS</button>
+        <button onclick="location.href='soporte.html'">CENTRO DE RECURSOS Y SOPORTE</button>
+    </div>
+
+    <div class="content">
+        <h2>Seguimiento de Personas con Capacidades Especiales en la ULEAM</h2>
+        <div class="info-boxes">
+            <div class="info-box">
+                <h3>APOYO ACADÉMICO</h3>
+                <p>Proporcionamos recursos y asistencia personalizados para estudiantes con capacidades especiales, asegurando que reciban el apoyo necesario para su éxito académico.</p>
+            </div>
+            <div class="info-box">
+                <h3>ACCESIBILIDAD</h3>
+                <p>Nos comprometemos a crear un entorno accesible para todos los estudiantes, con instalaciones y servicios que cumplen con los estándares de accesibilidad.</p>
+            </div>
+            <div class="info-box">
+                <h3>BIENESTAR INTEGRAL</h3>
+                <p>Ofrecemos programas de bienestar integral que incluyen apoyo psicológico, talleres y actividades para fomentar la inclusión y el desarrollo personal.</p>
+            </div>
+            <div class="info-box">
+                <h3>COMUNIDAD INCLUSIVA</h3>
+                <p>Promovemos una comunidad inclusiva donde todos los estudiantes son valorados y respetados, y donde se fomenta la participación activa y equitativa.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-section">
+            <h4>LINKS DE INTERÉS</h4>
+            <ul>
+                <li><a href="https://www.uleam.edu.ec/">Página Web ULEAM</a></li>
+                <li><a href="https://www.uleam.edu.ec/oferta-academica-2022/">Unidades Académicas</a></li>
+                <li><a href="https://www.uleam.edu.ec/contactos/">Contactos</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>ÁREA ESTUDIANTIL</h4>
+            <ul>
+                <li><a href="#">Alertas y Notificaciones</a></li>
+                <li><a href="#">Centro de recursos y soporte</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>REDES SOCIALES</h4>
+            <div class="social-links">
+                <a href="https://x.com/UleamEcuador" target="_blank">
+                    <img src="https://cdn.pixabay.com/photo/2023/09/02/17/51/x-8229321_1280.png" alt="Twitter">
+                </a>
+                <a href="https://www.facebook.com/UleamEc" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg" alt="Facebook">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="inicio.js"></script>
+</body>
+</html>
